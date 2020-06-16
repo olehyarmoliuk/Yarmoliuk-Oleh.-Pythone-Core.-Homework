@@ -1,6 +1,6 @@
-width = input("enter width ")
-hight = input("enter hight ")
-A = int(width) * int(hight)
-P = 2 * int(width) + 2 * int(hight)
-print("Area of rectangle is " + str(A))
-print("Perimeter of rectangle is " + str(P))
+width = float(input("enter width ")) 
+hight = float(input("enter hight ")) 
+area_1 = width * hight
+perimeter_1 = 2 * width + 2 * hight
+print("Area of rectangle is ", area_1)
+print("Perimeter of rectangle is ", perimeter_1)
