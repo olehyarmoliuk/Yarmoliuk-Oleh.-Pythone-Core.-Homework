@@ -5,8 +5,14 @@ while True:
     except:
         print('Incorrect value!')
 
-if year % 4 == 0:
+if year % 4 == 0 and year not in (1700, 1800, 1900, 2100, 2200, 2300):
     print('This year is intercalary')
-elif year % 4 != 0:
+else: 
     print('This year is usual')
-print('It is', int(year / 100 + 1), 'century')
+
+if year % 100 == 0:
+    print('It is', int(year / 100), 'century')
+elif year < 0:
+    print('It is', abs(int(year / 100 - 1)), 'century BC')
+else: 
+     print('It is', int(year / 100 + 1), 'century')

@@ -1,5 +1,11 @@
 p = int(input("Enter number of place "))
 
+while p not in range(1, 55):
+    print('There is no such place')
+    p = int(input("Please enter number of place again "))
+    continue
+
+
 if p in range(1, 37):
     print("Compartment")
 else: 

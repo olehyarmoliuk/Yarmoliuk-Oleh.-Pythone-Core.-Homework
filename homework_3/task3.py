@@ -1,30 +1,24 @@
 num_1 = int(input('Enter a number from -999999 to 999999 '))
 
-if num_1 == 0:
-    print("zero one-digit")    
-elif 0 < num_1 < 10:
-    print("positive one-digit")
-elif 10 < num_1 < 100:
-    print("positive two-digit")
-elif 100 < num_1 < 1000:
-    print("positive three-digit")
-elif 1000 < num_1 < 10000:
-    print("positive four-digit")
-elif 10000 < num_1 < 100000:
-    print("positive five-digit")
-elif 100000 < num_1 < 1000000:
-    print("positive six-digit")
-elif 0 > num_1 > -10:
-    print("negative one-digit")
-elif -10 > num_1 > -100:
-    print("negative two-digit")
-elif -100 > num_1 > -1000:
-    print("negative three-digit")
-elif -1000 > num_1 > -10000:
-    print("negative four-digit")
-elif -10000 > num_1 > -100000:
-    print("negative five-digit")
-elif -100000 > num_1 > -1000000:
-    print("negative six-digit")
+if num_1 < 0:
+    print('negative')
 else:
-    print('Incorrect value')
+    print('positive')
+
+if num_1 == 0:
+    print("zero one-digit")  
+
+if 0 < abs(num_1) <= 9:
+    print("one-digit")
+elif 9 < abs(num_1) <= 99:
+    print("two-digit")
+elif 99 < abs(num_1) <= 999:
+    print("three-digit")
+elif 999 < abs(num_1) <= 9999:
+    print("four-digit")
+elif 9999 < abs(num_1) <= 99999:
+    print("five-digit")
+elif 99999 < abs(num_1) <= 999999:
+    print("six-digit")
+else:
+    print('Incorrect value')    
