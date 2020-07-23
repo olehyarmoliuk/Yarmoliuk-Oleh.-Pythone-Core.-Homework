@@ -3,8 +3,6 @@ print(tuple_1)
 
 elem = input('Enter an element to find out its index ')
 
-
-
 if elem in tuple_1:
     print(tuple_1.index(elem))
 else:  
