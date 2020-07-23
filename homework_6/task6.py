@@ -1,11 +1,7 @@
 # I have no idea how to make it looks better
 
-print("Fill the first matrix in")
-
-mtrx_1 = [[int(input("Enter number: ")) for i in range(3)] for i in range(3)]
-print('Fill the second matrix in')
-mtrx_2 = [[int(input("Enter number: ")) for i in range(3)] for i in range(3)]
-
+mtrx_1 = [[int(input("Fill the first matrix in: ")) for i in range(3)] for i in range(3)]
+mtrx_2 = [[int(input("Fill the second matrix in: ")) for i in range(3)] for i in range(3)]
 
 mtrx_3 = [[], [], []]
 
@@ -47,11 +43,6 @@ if mtrx_1[2][2] >=  mtrx_2[2][2]:
 else:
     mtrx_3[2].insert(2, mtrx_2[2][2])
 
-
-
-
 print(mtrx_1)
 print(mtrx_2)
-
-
 print(mtrx_3)
