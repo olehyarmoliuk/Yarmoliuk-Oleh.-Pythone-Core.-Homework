@@ -17,4 +17,4 @@ for country, city in countries.items():
     if city_1 in city:
         country = listToString(country)
         result_1.append(country)
-        print(f'{city_1} is located in {listToString(result_1)}')
+        print(f'{city_1} is located in {listToString(result_1)}') 

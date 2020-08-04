@@ -1,6 +1,6 @@
 import pyowm
 
-owm = pyowm.OWM('b935502bd96ee8d52e5c9dce3849d093')
+owm = pyowm.OWM('your-API-code')
 
 while True:
     try: 
