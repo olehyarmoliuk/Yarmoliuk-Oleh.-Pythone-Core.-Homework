@@ -1,7 +1,11 @@
 # I have no idea how to make it looks better
 
-mtrx_1 = [[int(input("Fill the first matrix in: ")) for i in range(3)] for i in range(3)]
-mtrx_2 = [[int(input("Fill the second matrix in: ")) for i in range(3)] for i in range(3)]
+while True:
+    try:
+        mtrx_1 = [[int(input("Fill the first matrix in: ")) for i in range(3)] for i in range(3)]
+        mtrx_2 = [[int(input("Fill the second matrix in: ")) for i in range(3)] for i in range(3)]
+    except ValueError:
+        print('Incorrect value!')
 
 mtrx_3 = [[], [], []]
 
